@@ -47,12 +47,12 @@ export default function Vehicles() {
             </div>
 
             {/* table */}
-            <div className=' w-4/5 mx-auto mt-10 flex flex-col gap-4'>
+            <div className=' max-w-5xl mx-auto mt-10 flex flex-col gap-4'>
                 <h1 className=' text-2xl text-white font-semibold tracking-widest '>Vehicles</h1>
 
 
                 {/* Content Collumt */}
-                <div className='w-full flex flex-col items-center justify-center gap-12 pt-20 bg-white bg-opacity-20  overflow-x-auto rounded-lg'>
+                <div className='w-full max-w-5xl mx-auto flex flex-col items-center justify-center gap-12 pt-20 bg-white bg-opacity-20  overflow-x-auto rounded-lg'>
                     {/* Seacrh Collumnt */}
                     <div className=' flex flex-col w-40 mx-auto gap-2 items-center justify-center'>
                         <label className=' tracking-widest font-semibold text-slate-500 italic'>Seacrh Vehicles</label>

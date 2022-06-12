@@ -18,11 +18,11 @@ export default function Detail() {
             </div>
 
             {/* Detail Page Container */}
-            <div className=' container mx-auto mt-10'>
+            <div className=' max-w-5xl container mx-auto mt-10'>
                 {/* Title */}
                 <h1 className=' text-4xl font-semibold text-white tracking-widest'>Details</h1>
                 {/* Table */}
-                <div className=' flex flex-col items-center justify-center w-4/5 gap-10 bg-white bg-opacity-30 rounded-lg h-96 mx-auto mt-10 backdrop-blur-sm shadow-lg  '>
+                <div className=' flex flex-col items-center justify-center w-full gap-10 bg-white bg-opacity-30 rounded-lg h-96 mx-auto mt-10 backdrop-blur-sm shadow-lg  '>
                     <h2 className=' text-3xl font-bold text-white'>{data.name}</h2>
                     <div className=' flex w-full items-center justify-center '>
 

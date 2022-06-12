@@ -1,7 +1,13 @@
-FROM node:alpine
-WORKDIR '/app'
+FROM node:lts-alpine3.16
 
-COPY package.json .
+# set working directory
+WORKDIR /app
+
+COPY package.json ./
+COPY package-lock.json ./
 RUN npm install
-COPY . .
-CMD ['npm','start']
+
+COPY . ./
+EXPOSE 3000
+
+CMD ["npm","start"]
