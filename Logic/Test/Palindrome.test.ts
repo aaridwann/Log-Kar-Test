@@ -1,5 +1,4 @@
-import { Palindrome } from "../Palindrome";
-
+import { Palindrome } from "../src/Palindrome";
 
 let result = {
     'Palindrome Detected': 3,
@@ -7,8 +6,14 @@ let result = {
     'Palindrome Index': '0,2,5',
     'InvalidPalindrome Index': '1,3,4'
 }
-let str = 'kakak menjual katak dengan harga 12021'
-test('Palindrome Object result', () => {
-    expect(Palindrome('kakak menjual katak dengan harga 12021')).toEqual(result)
-})
 
+describe('Palindrome test', () => {
+
+    test('Valid Palindrome', () => {
+        expect(Palindrome('kakak menjual katak dengan harga 12021')).toEqual(result)
+    })
+
+    test('String < 2 length should be false', () => {
+        expect(Palindrome('h')).toBe(false)
+    })
+})
